@@ -1,0 +1,90 @@
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start lower */
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px); /* Move up slightly */
+  }
+  80% {
+    transform: translateY(5px); /* Bounce back down a bit */
+  }
+  100% {
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.container {
+  display: flex; /* Use flexbox for side-by-side layout */
+  flex-direction: row; /* Default direction */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Add space between text and slideshow */
+  margin: 20px auto; /* Center container with some margin */
+  max-width: 1060px; /* Max width to maintain layout */
+  width: 100%; /* Full width */
+  animation: fadeInBounce 1s ease-in; /* Apply fade-in animation */
+}
+
+.textContainer {
+  flex: 1; /* Allow text to take available space */
+  margin-right: 20px; /* Space between text and slideshow */
+  padding: 20px; /* Add some padding */
+  color: #333; /* Change text color to dark gray for visibility */
+}
+
+.pcolor {
+  color: #333; /* Change heading color to dark */
+  font-size: 18px;
+}
+
+.slideshowContainer {
+  flex: 1; /* Allow slideshow to take available space */
+  position: relative; /* Keep slideshow positioning */
+  height: 600px; /* Set fixed height for slideshow */
+}
+
+.slideshowImage {
+  position: absolute; /* Change to absolute for better control */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  opacity: 0; /* Start as invisible */
+  transition: opacity 0.5s ease-in-out;
+  width: 100%; 
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.active {
+  opacity: 1; /* Show active image */
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on small screens */
+    margin-bottom: 220px; /* Adjust bottom margin */
+    margin-top: 45px; /* Maintain top margin */
+  }
+
+  .textContainer {
+    margin-top: 20px;
+    margin-right: 0; /* Reset margin on small screens */
+    width: 90%; /* Ensure full width */
+  }
+
+  .slideshowContainer {
+    width: 90%; /* Make slideshow full width on smaller screens */
+
+    order: 1; /* Ensure it appears first in the column stack */
+    margin-bottom: 100px; /* Add space below the slideshow */
+    margin-top: 300px;
+  }
+
+  .slideshowImage {
+    height: auto; /* Set height to auto for responsiveness */
+    width: 100%; /* Ensure the image takes full width */
+    margin-top: 0; /* Reset margin-top */
+  }
+}

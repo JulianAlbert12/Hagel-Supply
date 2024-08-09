@@ -1,0 +1,22 @@
+.galleryContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center items horizontally */
+    gap: 20px; /* Space between items */
+    padding: 50px; /* Padding around the gallery */
+  }
+  
+  .brandItem {
+    flex: 1 1 150px; /* Allow flexibility and set a minimum width */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    background-color: white;
+    border-radius: 3px;
+  }
+  
+  .brandImage {
+    max-width: 50%; /* Make sure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Optional: Add some rounding */
+  }
+  

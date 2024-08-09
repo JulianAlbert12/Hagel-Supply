@@ -1,0 +1,89 @@
+/* DocMover.css */
+
+/* ../../styles/DocMover.css */
+
+.doc-mover {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Change align-items to flex-start */
+  padding: 20px;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-left: 390px; /* Add margin-left for left alignment */
+  margin-top: -400px;
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+  
+  .doc-mover h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .doc-mover label {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+  
+  .doc-mover input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .confirmation-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .confirmation-modal p {
+    font-size: 16spx;
+    margin-bottom: 10px;
+  }
+  
+  .confirmation-modal button {
+    flex: 1; /* Add this to make buttons share the available space equally */
+    padding: 8px 16px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0668b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .confirmation-modal button:first-child {
+    margin-right: 25px; /* Add margin to separate buttons */
+  }
+  
+  
+  .delete-button, .duplicate-button {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0668b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;  
+  }
+
+  .delete-button:hover, .duplicate-button:hover {
+    background-color: #055694;
+  }
+    

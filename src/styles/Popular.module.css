@@ -1,0 +1,178 @@
+/* Popular.module.css */
+
+/* Use the same container class used in Shoptest */
+.background {
+padding: 30px;
+background-color: white;
+}
+
+
+.popular {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+  }
+
+  .bestSellerSticker {
+    clip-path: polygon(0% 0%, 100% 0%, 80% 100%, 0% 100%);
+    width: 30%;
+    height: 22px;
+    left: -5px;
+    margin-top: -5px;
+    margin-bottom: -15px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+    z-index: 10;
+  }
+
+  .bestSellerText {
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 4px;
+    z-index: 10;
+  }
+  
+
+  .popularTitle {
+    color: #000;
+    font-family:sans-serif;
+    font-size: 27px; /* Adjust the font size as needed */
+    text-align: center;
+  }
+  
+  /*
+  .productList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 0px;
+    border: 1px solid #ececec; /* Add a border color */
+
+
+  .productList {
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    scrollbar-width: thin; /* Specify the width of the scrollbar (optional) */
+  }
+
+  /* Optional: Style for the scrollbar */
+  .productList::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  .productList::-webkit-scrollbar-thumb {
+    background-color: #0668b3;
+    border-radius: 10px;
+  }
+
+  .productLink {
+    text-decoration: none; /* Remove the underline from the links */
+    color: inherit; /* Inherit the text color from the parent (so it matches the product text color) */
+  }
+
+  .product {
+    margin-right: 15px;
+    width: 200px; /* Set a fixed width */
+    height: 200px; /* Set a fixed height */
+    padding: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in-out;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+    margin: 5px;
+  }
+  
+  
+  
+  .productImage {
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    max-height: 150px;
+    object-fit: contain;
+    transition: transfom 0.3s ease-in-out; 
+  }
+
+  .product:hover {
+    transform: scale(1.03); /* Increase the size of the image on hover */
+  }
+  
+  .title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: left;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow content */
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+  }
+  
+
+  .itemInfo {
+    padding: 3px 8px;
+    font-size: 12px; 
+    display: inline-block;
+    margin-right: auto;
+    margin-left: -30px;
+    margin-top: -10px;
+  }
+
+  .sizeBox {
+    background-color: #f0f0f0; 
+    padding: 3px 8px;
+    font-size: 12px; 
+    margin-top: -20px;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .productList {
+      gap: 0px;
+    }
+    .product {
+      width: 90px; /* Reduce the width for smaller screens */
+      height: auto; /* Adjust the height as needed */
+    }
+  
+    .productImage {
+      width: 100%;
+      max-width: 150px; /* Adjust the max-width for smaller screens */
+      height: 100px; /* Adjust the height as needed */
+      max-height: 120px; /* Adjust the max-height as needed */
+    }
+  
+    .popularTitle {
+      font-size: 30px; /* Reduce the font size for the title */
+    }
+  
+    .itemInfo {
+      font-size: 9px; 
+    }
+  
+    .title {
+      font-size: 12px;
+    }
+    .sizeBox {
+      padding: 2px 5px;
+      font-size: 9px;
+    }
+    .bestSellerSticker {
+      width: 45%;
+    }
+
+    .bestSellerText {
+      font-size: 11px;
+    }
+  }

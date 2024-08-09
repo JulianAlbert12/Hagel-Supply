@@ -1,0 +1,10 @@
+/* globalStyles.css */
+
+/* Set a maximum width for all components */
+.container {
+  max-width: 9000px; /* Adjust the value as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  }
+  
+  /* Add any additional global styling rules */
+  

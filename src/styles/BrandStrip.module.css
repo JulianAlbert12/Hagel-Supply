@@ -1,0 +1,80 @@
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(30px); /* Start lower */
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px); /* Move up slightly */
+  }
+  80% {
+    transform: translateY(5px); /* Bounce back down a bit */
+  }
+  100% {
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.brandStripContainer {
+  display: flex; /* Keep the flexbox layout */
+  flex-direction: row; /* Default to side by side */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center the content horizontally if there's space */
+  padding-top: 50px;
+  animation: fadeInBounce 1s ease-out; /* Apply bounce animation */
+}
+
+.textContainer {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  
+  border-radius: 5px;
+  background-color: #32a520; /* Set background color here */
+  padding: 50px 20px; /* Add padding for vertical and horizontal spacing */
+  max-width: 50%; /* Adjust width as needed */
+  box-sizing: border-box; /* Ensure padding is included in width */
+  text-align: center; /* Center text within the container */
+}
+
+.description {
+  margin: 0; /* Reset margin to avoid extra spacing */
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+@font-face {
+  font-family: "Retro New Version";
+  src: local("RetroNewVersion"),
+    url("../fonts/RetroNewVersion.otf") format("truetype");
+}
+
+.retroHeading {
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Retro New Version', sans-serif;
+  margin: 0; /* Adjust margin as needed */
+}
+
+.newsImage {
+  width: 350px; /* Fixed width for the image */
+  margin-left: 20px; /* Add space between text and image */
+  margin-top: 20px; /* Adjust margin as needed */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+@media screen and (max-width: 950px) {
+  .brandStripContainer {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .textContainer {
+    max-width: 100%; /* Make text container full width */
+    padding: 20px; /* Adjust padding for smaller screens */
+    border-radius: 0px;
+  }
+
+  .newsImage {
+    width: 250px; /* Adjust image size on small screens */
+    margin-left: 0px; /* Reset left margin to avoid spacing issues */
+    margin-top: 20px; /* Add top margin to create space above the image */
+  }
+}

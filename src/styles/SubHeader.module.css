@@ -1,0 +1,73 @@
+.sheader {
+  background-color: #1776bf;
+  display: grid;
+  grid-gap: 45px;
+  justify-items: left;
+  padding: 45px;
+  padding-top: 45px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.header {
+  cursor: pointer;
+  max-height: 50px;
+  overflow: hidden;
+  user-select: none;
+  margin-left: 0px;
+}
+
+p {
+  color: white;
+  font-size: large;
+  overflow: hidden;
+  width: 90%;
+  margin-left: 50px;
+  text-align: left;
+  font-size: 22px;
+  line-height: 1.75;
+  font-family: sans-serif;
+}
+
+.phoneNumber {
+  margin-top: -40px;
+  font-family: sans-serif;
+  font-size: 22px;
+  font-style: italic;
+}
+.image-icon {
+  position: absolute;
+  left: 265px;
+  filter: invert(25%);
+  margin-top: 5px;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease-out;
+}
+
+.image-icon.spin {
+  transform: rotate(135deg);
+}
+
+span {
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+}
+
+
+@media screen and (max-width: 1060px) {
+  .header {
+    margin-left: -20px;
+  }
+
+  .image-icon {
+    left: 240px;
+  }
+
+  p {
+    margin-left: 0px;
+    width: 100%;
+
+  }
+}
