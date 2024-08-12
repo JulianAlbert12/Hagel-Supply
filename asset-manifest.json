@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Hagel-Supply/static/css/main.c336d8b6.css",
-    "main.js": "/Hagel-Supply/static/js/main.a5b02f48.js",
+    "main.js": "/Hagel-Supply/static/js/main.c8e1dc91.js",
     "static/js/488.4d39eb6e.chunk.js": "/Hagel-Supply/static/js/488.4d39eb6e.chunk.js",
     "static/media/Storee.jpg": "/Hagel-Supply/static/media/Storee.4c38062249dbfc599b08.jpg",
     "static/media/Store.jpg": "/Hagel-Supply/static/media/Store.0e72bd36eab37829aa5b.jpg",
@@ -21,11 +21,11 @@
     "static/media/carlisle.png": "/Hagel-Supply/static/media/carlisle.026c2a48705a58346fda.png",
     "index.html": "/Hagel-Supply/index.html",
     "main.c336d8b6.css.map": "/Hagel-Supply/static/css/main.c336d8b6.css.map",
-    "main.a5b02f48.js.map": "/Hagel-Supply/static/js/main.a5b02f48.js.map",
+    "main.c8e1dc91.js.map": "/Hagel-Supply/static/js/main.c8e1dc91.js.map",
     "488.4d39eb6e.chunk.js.map": "/Hagel-Supply/static/js/488.4d39eb6e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c336d8b6.css",
-    "static/js/main.a5b02f48.js"
+    "static/js/main.c8e1dc91.js"
   ]
 }
