@@ -3,8 +3,8 @@ import { collection, addDoc, doc, updateDoc, getDocs } from 'firebase/firestore'
 import { firestore } from '../../firebase';
 import styles from '../../styles/AddItemForm.module.css';
 import ProductTemplate from './ProductTemplate';
-import ReactQuill from 'react-quill';
-import 'react-quill/dist/quill.snow.css'; 
+//import ReactQuill from 'react-quill';
+//import 'react-quill/dist/quill.snow.css'; 
 
 const preDefinedAttributes = [
   { attribute: 'Brand', value: '' },
@@ -68,9 +68,13 @@ const AddItemForm = ({ addPopularProduct }) => {
     setImages((prevImages) => prevImages.filter((_, i) => i !== index));
   };
 
-  const handleDescriptionChange = (value) => {
+  /*
+    const handleDescriptionChange = (value) => {
     setDescription(value);
   };
+  */
+
+
 
   const handleSizeChange = (event) => {
     setSize(event.target.value);
@@ -331,25 +335,29 @@ const AddItemForm = ({ addPopularProduct }) => {
             <textarea value={summary} onChange={handleSummaryChange} className={styles.bigInput} />
           </div>
 
-          
-          <div className={styles.formGroup}>
-              <label>Description:</label>
-                <div className={styles.TextContainer}>
-                <ReactQuill
-                  value={description}
-                  onChange={handleDescriptionChange}
-                  modules={{
-                    toolbar: [
-                      [{ header: '1' }, { header: '2' }],
-                      [{ list: 'ordered' }, { list: 'bullet' }],
-                      ['bold', 'italic', 'underline'],
-                      [{ align: [] }],
-                    ],
-                  }}
-                  theme="snow" 
-                />  
-              </div>
-          </div>
+          {
+            /*
+            <div className={styles.formGroup}>
+                <label>Description:</label>
+                  <div className={styles.TextContainer}>
+                  <ReactQuill
+                    value={description}
+                    onChange={handleDescriptionChange}
+                    modules={{
+                      toolbar: [
+                        [{ header: '1' }, { header: '2' }],
+                        [{ list: 'ordered' }, { list: 'bullet' }],
+                        ['bold', 'italic', 'underline'],
+                        [{ align: [] }],
+                      ],
+                    }}
+                    theme="snow" 
+                  />  
+                </div>
+            </div>
+            */
+          }
+
 
           <div className={styles.formGroup}>
             <label>Specification Chart:</label>

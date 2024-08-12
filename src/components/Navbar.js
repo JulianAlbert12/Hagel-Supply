@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import 'react-slidedown/lib/slidedown.css'
 
 import logo from '../images/HagelNew.png';
 import title from '../images/Hagel2.png';

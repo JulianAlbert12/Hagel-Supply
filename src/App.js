@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
-import 'react-quill/dist/quill.snow.css';
+//import 'react-quill/dist/quill.snow.css';
 
 import Navbar from './components/Navbar';
 import './styles/globalStyles.css';
@@ -16,7 +16,7 @@ import EditItemForm from './components/product/EditItemForm';
 
 import UpdateMessage from './components/UpdateMessage';
 import AboutUs from './pages/AboutUs';
-import Shoptest from './pages/shop/shoptest';
+import Shoptest from './pages/shop/shoptest'
 
 import ProductDescription from './components/product/ProductDescription';
 
