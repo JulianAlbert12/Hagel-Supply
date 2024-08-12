@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Hagel-Supply/static/css/main.c336d8b6.css",
+    "main.js": "/Hagel-Supply/static/js/main.a5b02f48.js",
+    "static/js/488.4d39eb6e.chunk.js": "/Hagel-Supply/static/js/488.4d39eb6e.chunk.js",
+    "static/media/Storee.jpg": "/Hagel-Supply/static/media/Storee.4c38062249dbfc599b08.jpg",
+    "static/media/Store.jpg": "/Hagel-Supply/static/media/Store.0e72bd36eab37829aa5b.jpg",
+    "static/media/Serenade.jpg": "/Hagel-Supply/static/media/Serenade.e9aa2b7dfa0b19da8b99.jpg",
+    "static/media/image1.jpg": "/Hagel-Supply/static/media/image1.1c2376c03f2a8a3a6cd5.jpg",
+    "static/media/about-image.jpg": "/Hagel-Supply/static/media/about-image.7779e04b879a8d07683a.jpg",
+    "static/media/serenade-logo.png": "/Hagel-Supply/static/media/serenade-logo.b48f42ee6ed170ffcd7c.png",
+    "static/media/header-3.png": "/Hagel-Supply/static/media/header-3.5db70ed024a241735c6d.png",
+    "static/media/HagelNew.png": "/Hagel-Supply/static/media/HagelNew.4fae15a2737039f8aa69.png",
+    "static/media/RetroNewVersion.otf": "/Hagel-Supply/static/media/RetroNewVersion.433812cc4e004db2cd91.otf",
+    "static/media/chase-logo.png": "/Hagel-Supply/static/media/chase-logo.455fb53c1db91a6abc1f.png",
+    "static/media/Hagel2.png": "/Hagel-Supply/static/media/Hagel2.0c4e701110facbaa0e23.png",
+    "static/media/kimclark.png": "/Hagel-Supply/static/media/kimclark.7e2798ac8046b6e3147d.png",
+    "static/media/exsl-logo.png": "/Hagel-Supply/static/media/exsl-logo.e5fde05f46370cd6d546.png",
+    "static/media/maintex-logo.png": "/Hagel-Supply/static/media/maintex-logo.0529d91e2a3ff8265997.png",
+    "static/media/royalpaper-logo.png": "/Hagel-Supply/static/media/royalpaper-logo.540db03450e2cf47a2ef.png",
+    "static/media/carlisle.png": "/Hagel-Supply/static/media/carlisle.026c2a48705a58346fda.png",
+    "index.html": "/Hagel-Supply/index.html",
+    "main.c336d8b6.css.map": "/Hagel-Supply/static/css/main.c336d8b6.css.map",
+    "main.a5b02f48.js.map": "/Hagel-Supply/static/js/main.a5b02f48.js.map",
+    "488.4d39eb6e.chunk.js.map": "/Hagel-Supply/static/js/488.4d39eb6e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c336d8b6.css",
+    "static/js/main.a5b02f48.js"
+  ]
+}
