@@ -92,7 +92,7 @@ function App() {
           </>
         }/>
 
-    <Route path="/" element={
+    <Route path="/Hagel-Supply" element={
           <>
             <UpdateMessage />
             <ImageSlideshow images={images} />
