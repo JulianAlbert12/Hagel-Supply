@@ -213,7 +213,7 @@ const handleDropdownClose = (event) => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.navbarLogo}>
-        <Link to="/">
+        <Link to="/Hagel-Supply">
           <div className={styles.logoContainer}>
             <img src={logo} alt="Logo" className={styles.logoImage} />
           </div>

@@ -2,13 +2,12 @@
   padding-top: 15px;
   padding-bottom: 0px;
   margin-top: 20px;
-
 }
 
 .container {
   margin: 0 auto;
   padding: 75px;
-  background-color: #fff;
+  background-color: #fff; 
 }
 
 .flexContainer {
@@ -40,6 +39,7 @@
 .headerContainer {
   display: flex; /* Use flex layout to arrange elements in a row */
   align-items: center; /* Vertically center align the elements */
+
 }
 
 .productCount {
@@ -81,9 +81,8 @@
 .itemList {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
   justify-content: center;
-
 }
 
 .leftAlignedItemList {
@@ -112,21 +111,25 @@
   align-items: center;
   justify-content: center;
   font-size: 12px;
+  
 }
 
 .sizeBox {
   background-color: #f0f0f0; 
   padding: 4px 10px;
+  border-radius: 3px;
   font-size: 12px; 
   margin-top: 5px;
-  margin-right: 100px;
+  margin-right: auto; /* Automatically push the right margin */
   margin-bottom: 5px;
-  
+  margin-left: 0; /* Align to the left */
+  float: left; /* Float the size box to the left */
+  clear: both; /* Ensure it starts on a new line within its container */
 }
 
 .itemBox {
-  padding: 0px; /* Adjust the padding */
-
+  background-color: #fff;
+  padding: 20px; /* Adjust the padding */
   width: calc(25% - 0px);
   border-radius: 3px;
   transition: transform 0.2s ease-in-out;
@@ -151,9 +154,8 @@ transform: scale(1.03); /* Increase the size of the image on hover */
   .container {
       max-width: 840px;
     }
-    
 }
-  
+
 @media (max-width: 1170px) {
   .container {
     max-width: 780px;
@@ -167,8 +169,8 @@ transform: scale(1.03); /* Increase the size of the image on hover */
   .itemBox {
     width: calc(30% - 20px); 
   }
-
 }
+
 @media (max-width: 1260px) {
   .background {
     padding-top: 15px;
@@ -200,11 +202,8 @@ transform: scale(1.03); /* Increase the size of the image on hover */
   .categoryTitle {
     font-size: 24px;
   }
-  .itemBox {
-    padding: 0px;
-  }
   .productCount {
-    font-size:medium;
+    font-size: medium;
     margin-top: 20px;
     margin-right: 10px;
     margin-left: -30px;
@@ -224,8 +223,7 @@ transform: scale(1.03); /* Increase the size of the image on hover */
     font-size: 9px;
   }
   .itemBox {
-    padding: 0px; /* Adjust the padding */
-    width: calc(50% - 15px);
+    padding: 10px; /* Increase padding for better spacing */
+    width: calc(100% - 20px); /* Full width on smaller screens */
   }
 }
-

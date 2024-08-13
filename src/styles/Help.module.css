@@ -1,43 +1,47 @@
 /* Help.module.css */
 
 .helpContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    border-radius: 4px;
-    background-color: #fff;
-    font-weight: 600;
-    margin: 0 auto; 
-    margin-bottom: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .helpText {
-    margin-top: 10px;
-    color: #333;
-    font-size: 18px;
-    margin-left: 410px;
-    padding: 40px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  border-radius: 4px;
+  background-color: #fff;
+  font-weight: 600;
+  padding: 10px; /* Add padding for better spacing */
+  max-width: 90%; /* Limit width to prevent overflow on larger screens */
+}
 
-  .helpLinks {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.helpText {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem; /* Use relative units for font size */
+  text-align: center; /* Center text to fit better on smaller screens */
+  padding: 20px; /* Adjust padding for better spacing */
+}
+
+/* Use media queries to adjust styles for different screen sizes */
+@media (max-width: 768px) {
+  .helpText {
+      font-size: 1rem; /* Adjust font size for tablets */
+      padding: 15px; /* Adjust padding for tablets */
   }
-  
-  .contactLink,
-  .faqLink {
-    color: #0668b3;
-    text-decoration: none;
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 22px;
+}
+
+@media (max-width: 480px) {
+  .helpText {
+      font-size: 0.9rem; /* Adjust font size for phones */
+      padding: 10px; /* Adjust padding for phones */
   }
-  
-  .contactLink:hover,
-  .faqLink:hover {
-    text-decoration: underline;
-  }
-  
+}
+
+.contactLink {
+  color: #0668b3;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.1rem; /* Use relative units for font size */
+}
+
+.contactLink:hover {
+  text-decoration: underline;
+}

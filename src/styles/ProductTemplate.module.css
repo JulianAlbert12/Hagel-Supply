@@ -1,5 +1,3 @@
-/* ProductTemplate.module.css */
-
 /* Global styles */
 body {
   background-color: #f0f0f0;
@@ -10,12 +8,14 @@ body {
   position: relative;
   margin-top: 40px;
   margin-bottom: 30px;
-  width: 900px;
+  max-width: 100%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
+  padding-top: 60px;
   border-radius: 4px;
   background-color: #fff;
 }
@@ -58,7 +58,6 @@ body {
   margin: 0 5px;
   cursor: pointer;
   margin-bottom: 30px;
-
 }
 
 .activeCircle {
@@ -91,11 +90,11 @@ body {
   margin-bottom: 20px;
   background-color: #fff;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 .category,
-.size{
+.size {
   color: #333;
   font-size: 18px;
 }
@@ -107,8 +106,8 @@ body {
 .sizeLabel {
   color: #333;
   font-size: 18px;
-  font-weight: bold; 
-  margin-right: -300px; 
+  font-weight: bold;
+  margin-right: -300px;
 }
 
 .bulletPoints {
@@ -116,31 +115,31 @@ body {
   list-style: none;
   padding-left: 0px;
   display: flex;
-  flex-direction: column; /* Display bullet points vertically */
+  flex-direction: column;
 }
 
 .bulletPoint {
   display: flex;
-  align-items: flex-start; /* Align bullet points to the top */
-  margin-bottom: 5px; /* Add some space between bullet points */
-  line-height: 1.4; /* Set the line height for consistent spacing */
+  align-items: flex-start;
+  margin-bottom: 5px;
+  line-height: 1.4;
 }
 
 .bulletPoint::before {
   content: "•";
   margin-right: 10px;
   font-size: 30px;
-  line-height: 0.55; /* Adjust line height for consistent spacing */
-  vertical-align: top; /* Align the bullet to the top of the line */
+  line-height: 0.55;
+  vertical-align: top;
 }
 
 /* Description Dropdown */
 .descriptionDropdown {
-  margin-top: 0px;
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0 20px; /* Add padding to prevent reaching the screen edges */
 }
 
 .thicktitle {
@@ -151,7 +150,7 @@ body {
   color: #333;
   border: none;
   border: 1px solid #e8e8e8;
-  background-color:#fff;
+  background-color: #fff;
   font-size: 18px;
   padding: 20px;
   display: flex;
@@ -163,11 +162,11 @@ body {
   border-radius: 0px;
 }
 
-.descriptionContent{
+.descriptionContent {
   color: #333;
   text-align: left;
-  max-width: 800px; 
-  margin: 0 auto; 
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .descriptionContent p,
@@ -191,30 +190,30 @@ body {
   border: 1px solid #e8e8e8;
   border-collapse: collapse;
   width: 100%;
-  margin: 20px auto; /* Center the table with top and bottom margins of 20px */
+  margin: 20px auto;
   background-color: #fff;
   margin-right: -20px;
 }
 
-.specificationTable th, .specificationTable td {
+.specificationTable th,
+.specificationTable td {
   border: 1px solid #ccc;
   padding: 8px;
   text-align: left;
 }
 
 .attributeCell {
-  color: #333; /* Add your preferred background color */
-  font-weight: bold; /* Add your preferred font weight */
+  color: #333;
+  font-weight: bold;
   background-color: #e8e8e8;
-
 }
 
 /* Description and File Container */
 .descriptionContent {
   display: flex;
-  flex-direction: column; 
-  width: 50%; 
-  align-items: flex-start; 
+  flex-direction: column;
+  width: 100%; /* Updated for responsiveness */
+  align-items: flex-start;
   margin-left: 20px;
 }
 
@@ -234,7 +233,54 @@ body {
 }
 
 .namedLink {
-  display: flex; 
+  display: flex;
   margin-bottom: 10px;
-  align-items: center; 
+  align-items: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .imageContainer,
+  .detailsContainer {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .descriptionDropdown {
+    align-items: center; /* Center the content in mobile mode */
+    padding: 0 15px; /* Adjust padding for mobile mode */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+  }
+
+  .descriptionContent {
+    max-width: 90%; /* Prevent the content from reaching the edges */
+    margin: 0 auto; /* Center the content */
+  }
+
+  .sku,
+  .sizeLabel,
+  .size,
+  .bulletPoints,
+  .dropdownToggle {
+    font-size: 14px;
+  }
+
+  .specificationTable {
+    font-size: 14px;
+  }
+
+  .fileLink {
+    font-size: 16px;
+  }
 }

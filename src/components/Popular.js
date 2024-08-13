@@ -11,9 +11,11 @@ const Popular = ({ addPopularProduct }) => {
   const getItemAttribute = (item, attributeName) => {
     if (Array.isArray(item.specificationData)) {
       const attributeObj = item.specificationData.find(spec => spec.attribute === attributeName);
-      return attributeObj ? attributeObj.value : 'N/A';
+      return attributeObj && attributeObj.value && attributeObj.value.toLowerCase() !== 'none'
+        ? attributeObj.value
+        : null;
     }
-    return 'N/A'; // Handle case where specificationData is not an array
+    return null; // Handle case where specificationData is not an array
   };
 
   useEffect(() => {
@@ -37,8 +39,8 @@ const Popular = ({ addPopularProduct }) => {
     fetchPopularProducts();
   }, []);
 
-return (
-  <div className={styles.background}>
+  return (
+    <div className={styles.background}>
       <div className={styles.popular}>
         <div className={styles.productList}>
           {popularProducts.length > 0 ? (
@@ -60,8 +62,12 @@ return (
                     className={styles.productImage}
                   />
                   <h3 className={styles.title}>{product.title}</h3>
-                  <div className={styles.itemInfo}>Scent: {getItemAttribute(product, 'Scent')}</div>
-                  <div className={styles.sizeBox}>Size: {product.size}</div>
+                  {getItemAttribute(product, 'Scent') && (
+                    <div className={styles.itemInfo}>Scent: {getItemAttribute(product, 'Scent')}</div>
+                  )}
+                  {product.size && (
+                    <div className={styles.sizeBox}>Size: {product.size}</div>
+                  )}
                 </div>
               </Link>
             ))
