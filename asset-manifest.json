@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Hagel-Supply/static/css/main.59eeb29a.css",
-    "main.js": "/Hagel-Supply/static/js/main.c8e1dc91.js",
+    "main.css": "/Hagel-Supply/static/css/main.587a3a52.css",
+    "main.js": "/Hagel-Supply/static/js/main.c219f0ae.js",
     "static/js/488.4d39eb6e.chunk.js": "/Hagel-Supply/static/js/488.4d39eb6e.chunk.js",
     "static/media/Storee.jpg": "/Hagel-Supply/static/media/Storee.4c38062249dbfc599b08.jpg",
     "static/media/Store.jpg": "/Hagel-Supply/static/media/Store.0e72bd36eab37829aa5b.jpg",
@@ -20,12 +20,12 @@
     "static/media/royalpaper-logo.png": "/Hagel-Supply/static/media/royalpaper-logo.540db03450e2cf47a2ef.png",
     "static/media/carlisle.png": "/Hagel-Supply/static/media/carlisle.026c2a48705a58346fda.png",
     "index.html": "/Hagel-Supply/index.html",
-    "main.59eeb29a.css.map": "/Hagel-Supply/static/css/main.59eeb29a.css.map",
-    "main.c8e1dc91.js.map": "/Hagel-Supply/static/js/main.c8e1dc91.js.map",
+    "main.587a3a52.css.map": "/Hagel-Supply/static/css/main.587a3a52.css.map",
+    "main.c219f0ae.js.map": "/Hagel-Supply/static/js/main.c219f0ae.js.map",
     "488.4d39eb6e.chunk.js.map": "/Hagel-Supply/static/js/488.4d39eb6e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59eeb29a.css",
-    "static/js/main.c8e1dc91.js"
+    "static/css/main.587a3a52.css",
+    "static/js/main.c219f0ae.js"
   ]
 }
